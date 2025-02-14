@@ -105,15 +105,11 @@ const Navbar = () => {
             style={{ zIndex: 1122 }}
           >
             <DropDown
-              to="/social-media"
+              to=""
               title="Research a topic"
               className={'w-full rounded-full'}
             />
-            <DropDown
-              to="/canva-design"
-              title="Stock screener"
-              className={'w-full'}
-            />
+            <DropDown to="" title="Stock screener" className={'w-full'} />
             <DropDown title="Find companies" className={'w-full'} />
           </div>
         </div>
@@ -154,21 +150,9 @@ const Navbar = () => {
             className="flex rounded-xl pb-4 mb-4 bg-white top-[48px] right-[30%] m-auto flex-col justify-center items-center flex-wrap shadow-xl w-[18rem] lg:hidden"
             style={{ zIndex: 1122 }}
           >
-            <DropDown
-              title="Search for securities"
-              src="./images/navbar/illustrations.png"
-              className={'w-full'}
-            />
-            <DropDown
-              title="Load an existing portfolio"
-              src="./images/navbar/guides.png"
-              className={'w-full'}
-            />
-            <DropDown
-              title="Backtest"
-              src="./images/navbar/design-blog.png"
-              className={'w-full'}
-            />
+            <DropDown title="Search for securities" className={'w-full'} />
+            <DropDown title="Load an existing portfolio" className={'w-full'} />
+            <DropDown title="Backtest" className={'w-full'} />
           </div>
         </div>
         <ListItem
@@ -408,15 +392,11 @@ const Navbar = () => {
           style={{ zIndex: 1122 }}
         >
           <DropDown
-            to="/social-media"
+            to=""
             title="Research a topic"
             className={'w-full rounded-full'}
           />
-          <DropDown
-            to="/canva-design"
-            title="Stock screener"
-            className={'w-full'}
-          />
+          <DropDown to="" title="Stock screener" className={'w-full'} />
           <DropDown title="Find companies" className={'w-full'} />
         </div>
       </div>
@@ -437,26 +417,9 @@ const Navbar = () => {
           className="hidden fixed rounded-xl p-5 bg-white top-[98px] right-[40%] m-auto flex-col justify-center items-center flex-wrap shadow-xl w-[18rem] lg:flex"
           style={{ zIndex: 1122 }}
         >
-          <DropDown
-            title="Free illustrations"
-            src="./images/navbar/illustrations.png"
-            className={'w-full'}
-          />
-          <DropDown
-            title="guilds"
-            src="./images/navbar/guides.png"
-            className={'w-full'}
-          />
-          <DropDown
-            title="design blog"
-            src="./images/navbar/design-blog.png"
-            className={'w-full'}
-          />
-          <DropDown
-            title="case studies"
-            src="./images/navbar/case-study.png"
-            className={'w-full'}
-          />
+          <DropDown title="Search for securities" className={'w-full'} />
+          <DropDown title="Load an existing portfolio" className={'w-full'} />
+          <DropDown title="Backtest" className={'w-full'} />
         </div>
       </div>
 
