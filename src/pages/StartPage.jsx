@@ -1,4 +1,5 @@
 import Examples from '../Components/Examples';
+import Resources from '../Components/Resources';
 import StartPageHeader from '../Components/StartPageHeader';
 
 const StartPage = () => {
@@ -6,6 +7,7 @@ const StartPage = () => {
     <>
       <StartPageHeader />
       <Examples />
+      <Resources />
     </>
   );
 };
