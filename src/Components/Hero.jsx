@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <header
-        className={`md:mx-auto border border-gray-400 rounded-2xl p-2 bg-gradient-to-b from-[#dddbff] via-[#ecebff] to-white w-11/12 my-6 mx-4 overflow-hidden md:my-10 pb-20 max-w-7xl items-center md:p-8`}
+        className={`md:mx-auto border relative border-gray-400  rounded-2xl p-2 bg-gradient-to-b from-[#dddbff] via-[#ecebff] to-white w-11/12 my-6 mx-4  md:my-10 pb-20 max-w-7xl items-center md:p-8`}
       >
         <div className="relative flex mx-2 flex-col gap-8 p-2 top-0 justify-center items-center md:mx-19 md:P-8">
           <h2 className="bg-white py-4 mt-8 shadow-xl text-md text-black px-3 rounded-full md:text-lg md:mt-0">
@@ -40,6 +40,7 @@ const Hero = () => {
               className="w-14"
             />
             <div
+              className="w-[40rem] h-[40rem] absolute -bottom-90"
               style={{
                 background:
                   'radial-gradient(53.2% 53.2% at 50% 50%, rgba(173, 193, 255, 0.498) 0%, rgba(251, 251, 254, 0) 100%)',
