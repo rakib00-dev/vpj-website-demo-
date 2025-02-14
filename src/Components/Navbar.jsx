@@ -288,7 +288,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="mx-auto transition-all mt-4 mb-8 md:my-8 bg-black/80 w-11/12 md:w-4/5 max-w-7xl h-15 md:h-20 relative top-0 border-b-1  border-gray-200 z-20  rounded-full"
+        className="mx-auto transition-all mt-4 mb-8 md:my-4 bg-black/80 w-11/12 md:w-4/5 max-w-7xl h-15 md:h-20 relative top-0 border-b-1  border-gray-200 z-20  rounded-full"
         id="navBarFix"
         ref={navBarFix}
       >
