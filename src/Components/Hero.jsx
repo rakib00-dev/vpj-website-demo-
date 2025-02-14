@@ -39,7 +39,7 @@ const Hero = () => {
             className="w-14"
           />
           <div
-            className="w-[40rem] h-[40rem] absolute -bottom-100"
+            className="md:w-[40rem] w-full h-[40rem] absolute -bottom-100"
             style={{
               background:
                 'radial-gradient(53.2% 53.2% at 50% 50%, rgba(173, 193, 255, 0.498) 0%, rgba(251, 251, 254, 0) 100%)',
