@@ -14,7 +14,7 @@ li {
   background-color: var(--background-blue);
 }
 .DropItemHover:hover {
-  background-color: rgb(157, 204, 255);
+  background-color: rgba(209, 157, 255, 0.349);
 }
 
 .DropItemHover:hover h5 {

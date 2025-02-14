@@ -38,7 +38,7 @@ const Navbar = () => {
         <ListItem
           navLink="#"
           className={
-            'capitalize  flex justify-start items-center gap-2 py-6 text-lg '
+            'capitalize  flex justify-start items-center gap-2 py-6 p-6 text-lg '
           }
           onmouseover={() => setIsResourceHovered(true)}
           onmouseout={() => setIsResourceHovered(false)}
@@ -106,47 +106,15 @@ const Navbar = () => {
           >
             <DropDown
               to="/social-media"
-              title="social media"
-              src="./images/navbar/social-media.svg"
+              title="Research a topic"
+              className={'w-full rounded-full'}
             />
             <DropDown
               to="/canva-design"
-              title="canva design"
-              src="./images/navbar/canva.png"
+              title="Stock screener"
+              className={'w-full'}
             />
-            <DropDown
-              title="graphic design"
-              src="./images/navbar/graphic-design.svg"
-            />
-            <DropDown title="web design" src="./images/navbar/web-design.svg" />
-            <DropDown
-              title="print design"
-              src="./images/navbar/print-design.png"
-            />
-            <DropDown
-              title="video editing"
-              src="./images/navbar/video-editing.png"
-            />
-            <DropDown title="branding" src="./images/navbar/branding.png" />
-            <DropDown
-              title="presentation"
-              src="./images/navbar/presentation.png"
-            />
-            <DropDown title="ad design" src="./images/navbar/ad-design.png" />
-            <DropDown
-              title="illustrations"
-              src="./images/navbar/illustrations.png"
-            />
-            <DropDown
-              title="motion graphic"
-              src="./images/navbar/motion-graphic.png"
-            />
-            <Link
-              to="/#"
-              className="transition-all px-3 py-3 ml-4 mt-4 bg-blue-100/50 border-1/80 text-blue-500 font-bold rounded-md text-sm hover:border-1 hover:bg-white"
-            >
-              ENTIRE SCOPE OF SERVICE
-            </Link>
+            <DropDown title="Find companies" className={'w-full'} />
           </div>
         </div>
         <ListItem
@@ -177,7 +145,7 @@ const Navbar = () => {
         <div
           className={
             isResourceHovered
-              ? `transition-all relative justify-start items-start place-items-center m-auto scale-y-100`
+              ? `transition-all relative  justify-start items-start place-items-center m-auto scale-y-100`
               : 'transition-all scale-y-0 hidden'
           }
           onClick={() => setIsResourceHovered((prev) => !prev)}
@@ -187,23 +155,18 @@ const Navbar = () => {
             style={{ zIndex: 1122 }}
           >
             <DropDown
-              title="Free illustrations"
+              title="Search for securities"
               src="./images/navbar/illustrations.png"
               className={'w-full'}
             />
             <DropDown
-              title="guilds"
+              title="Load an existing portfolio"
               src="./images/navbar/guides.png"
               className={'w-full'}
             />
             <DropDown
-              title="design blog"
+              title="Backtest"
               src="./images/navbar/design-blog.png"
-              className={'w-full'}
-            />
-            <DropDown
-              title="case studies"
-              src="./images/navbar/case-study.png"
               className={'w-full'}
             />
           </div>
@@ -263,8 +226,8 @@ const Navbar = () => {
                 ? smallClassName
                 : ({ isActive }) =>
                     isActive
-                      ? `relative text-xl font-bold cursor-pointer transition-all duration-300 capitalize text-blue-500 lg:text-sm hover:text-gray-500 ${className}`
-                      : `relative text-xl font-bold cursor-pointer transition-all duration-300 capitalize  lg:text-sm hover:text-gray-500 ${className}`
+                      ? `relative text-xl font-medium cursor-pointer transition-all duration-300 capitalize text-blue-500 lg:text-sm hover:text-gray-500 ${className}`
+                      : `relative text-xl font-medium cursor-pointer transition-all duration-300 capitalize  lg:text-sm hover:text-gray-500 ${className}`
             }
           >
             {children}
@@ -446,15 +409,15 @@ const Navbar = () => {
         >
           <DropDown
             to="/social-media"
-            title="social media"
+            title="Research a topic"
             className={'w-full rounded-full'}
           />
           <DropDown
             to="/canva-design"
-            title="canva design"
+            title="Stock screener"
             className={'w-full'}
           />
-          <DropDown title="graphic design" className={'w-full'} />
+          <DropDown title="Find companies" className={'w-full'} />
         </div>
       </div>
 
@@ -471,7 +434,7 @@ const Navbar = () => {
         onClick={() => setIsResourceHovered((prev) => !prev)}
       >
         <div
-          className="hidden fixed rounded-xl bg-white top-[98px] right-[40%] m-auto flex-col justify-center items-center flex-wrap shadow-xl w-[18rem] lg:flex"
+          className="hidden fixed rounded-xl p-5 bg-white top-[98px] right-[40%] m-auto flex-col justify-center items-center flex-wrap shadow-xl w-[18rem] lg:flex"
           style={{ zIndex: 1122 }}
         >
           <DropDown
@@ -507,34 +470,31 @@ const Navbar = () => {
           id="menu"
           className={
             isNavOpen
-              ? 'transition-all fixed top-20 flex justify-start items-start flex-col w-full h-full pl-5 pt-5 gap-10 border rounded-md bg-white m-auto overflow-y-auto xl:hidden'
-              : 'hidden'
+              ? 'transition-all duration-300 fixed top-20 right-0 flex justify-start items-start flex-col w-full h-full pl-5 pt-5 gap-10 border rounded-md bg-black text-white m-auto overflow-y-auto xl:hidden'
+              : 'transition-all duration-300 fixed top-20 -right-[190%]  flex justify-start items-start flex-col w-full h-full pl-5 pt-5 gap-10 border rounded-md bg-black text-white m-auto overflow-y-auto xl:hidden'
           }
           style={{ zIndex: 122 }}
         >
-          <ul className="flex justify-start items-start flex-col leading-8">
-            <NavListsSmallScreen />
-            <div className="flex flex-col-reverse gap-4 justify-end pr-16 sm:flex lg:pr-0">
-              <Link
-                to="/#"
-                className="rounded-md px-7 text-center py-3 text-base font-medium text-blue-500 hover:bg-blue-500/90"
-              >
-                Sign Up
-              </Link>
-              <Link
-                to="/#"
-                className="px-7 py-3 text-center text-blue-500 border border-blue-500 rounded-md font-medium text-dark hover:text-blue-500"
+          <ul className="flex justify-start items-start flex-col my-6 gap-3 ml-4 leading-8">
+            <div className="flex gap-4 justify-center items-center pr-16 sm:flex lg:pr-0">
+              <ListItem
+                navLink="/about-us"
+                className={
+                  'capitalize  text-black/50 bg-gray-400  sm:text-sm  flex px-4 py-3 rounded-full'
+                }
               >
                 Sign in
-              </Link>
-              <Link
-                to="/book-a-call"
-                className="rounded-md text-center bg-blue-500 px-7 py-3 text-base font-medium text-white hover:bg-blue-500/90"
-                onClick={() => setIsNavOpen(false)}
+              </ListItem>
+              <ListItem
+                navLink="/about-us"
+                className={
+                  'capitalize  text-black/50 bg-gray-400  sm:text-sm px-4 py-3 rounded-full'
+                }
               >
-                Book A Call
-              </Link>
+                Login
+              </ListItem>
             </div>
+            <NavListsSmallScreen />
           </ul>
         </div>
       </OutsideClickHandler>
