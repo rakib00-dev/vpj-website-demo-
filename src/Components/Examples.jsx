@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-const Examples = ({ title = 'Examples', children, md = 'grid-cols-4' }) => {
+const Examples = ({ title = 'Examples', children, md = 'md:grid-cols-4' }) => {
   return (
     <section className="mx-auto w-11/12 max-w-7xl my-12 md:my-26">
       <div className="grid place-items-center gap-10">
         <h1 className="text-2xl font-bold text-center">{title}</h1>
-        <div className={`grid grid-cols-1 gap-4 md:${md}`}>
+        <div className={`grid grid-cols-1 gap-4 md:gap-8 ${md}`}>
           {children ? (
             children
           ) : (
