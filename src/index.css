@@ -3,3 +3,23 @@
 li {
   list-style: none;
 }
+
+/* navbar dropdown ⬇️*/
+.DropItemHover,
+.DropItemHover h5 {
+  transition: 0.3s ease-in-out;
+}
+
+.DropItemHover:hover {
+  background-color: var(--background-blue);
+}
+.DropItemHover:hover {
+  background-color: rgb(157, 204, 255);
+}
+
+.DropItemHover:hover h5 {
+  color: gray;
+  border-radius: 50%;
+}
+
+/* navbar ⬆️ */

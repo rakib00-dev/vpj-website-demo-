@@ -15,7 +15,7 @@ const Navbar = () => {
         <ListItem
           navLink={'#'}
           className={
-            'capitalize  flex justify-start items-center gap-2  text-lg '
+            'capitalize  flex justify-start items-center gap-2 py-6 text-lg '
           }
           onmouseover={() => setIsHovered(true)}
           onmouseout={() => setIsHovered(false)}
@@ -38,7 +38,7 @@ const Navbar = () => {
         <ListItem
           navLink="#"
           className={
-            'capitalize  flex justify-start items-center gap-2  text-lg '
+            'capitalize  flex justify-start items-center gap-2 py-6 text-lg '
           }
           onmouseover={() => setIsResourceHovered(true)}
           onmouseout={() => setIsResourceHovered(false)}
@@ -276,7 +276,6 @@ const Navbar = () => {
 
   const DropDown = ({
     title = 'web design',
-    src = 'https://cdn.prod.website-files.com/63a9cb71c629474d4ae334b9/64ad4265f27f2a2ecddd973e_social-media%20(1)%201.svg',
     to = '#',
     className,
     imgClassName,
@@ -285,18 +284,12 @@ const Navbar = () => {
       <>
         <Link
           to={to}
-          className={`flex gap-2 p-4 justify-start items-center w-[210px] rounded-md DropItemHover ${className}`}
+          className={`flex gap-2 p-4 capitalize rounded-full justify-start items-center w-[210px] DropItemHover ${className}`}
           onClick={() => {
             setIsNavOpen(false);
           }}
         >
-          <img
-            src={src}
-            alt={title}
-            className={`p-3 rounded bg-gray-100/80 h-[43.98px] ${imgClassName}`}
-            loading="lazy"
-          />
-          <h5 className="uppercase text-sm w-fit font-bold">{title}</h5>
+          {title}
         </Link>
       </>
     );
@@ -354,10 +347,10 @@ const Navbar = () => {
       >
         <nav
           id="nav"
-          className="relative flex justify-center items-center px-6 py-4 max-w-7xl border-b-1 border-gray-200 bg-black/60 p-4 w-full h-20 rounded-full  m-auto overflow-hidden lg:py-0.5"
+          className="relative flex justify-center items-center px-6 py-4 max-w-7xl border-b-1 border-gray-200 bg-black/60 p-4 w-full h-20 rounded-full m-auto overflow-hidden lg:py-0.5"
         >
           <div className={''} style={cssStyle.blur}></div>{' '}
-          <div className="flex justify-center items-center w-fit gap-10 md:mx-10">
+          <div className="flex justify-between items-center w-full gap-10 md:mx-10">
             <div
               id="logo"
               className="text-md font-medium w-32 md:w-64 md:text-lg"
@@ -421,7 +414,7 @@ const Navbar = () => {
                 setIsNavOpen((prev) => !prev);
               }}
             >
-              <RiMenu3Fill className="text-3xl" />
+              <RiMenu3Fill className="text-3xl text-white" />
             </div>
 
             <div
@@ -430,7 +423,7 @@ const Navbar = () => {
                 setIsNavOpen((prev) => prev);
               }}
             >
-              <RiCloseFill className="text-3xl" />
+              <RiCloseFill className="text-3xl text-white" />
             </div>
           </div>
         </nav>
@@ -448,52 +441,20 @@ const Navbar = () => {
         onClick={() => setIsHovered((prev) => !prev)}
       >
         <div
-          className="hidden fixed rounded-xl bg-white top-[48px] m-auto justify-start items-start flex-wrap shadow-xl w-[40rem] lg:flex"
+          className="hidden fixed rounded-xl bg-white top-[98px] p-5 m-auto justify-start flex-col items-start shadow-xl w-[20rem] right-1/2 lg:flex"
           style={{ zIndex: 1122 }}
         >
           <DropDown
             to="/social-media"
             title="social media"
-            src="./images/navbar/social-media.svg"
+            className={'w-full rounded-full'}
           />
           <DropDown
             to="/canva-design"
             title="canva design"
-            src="./images/navbar/canva.png"
+            className={'w-full'}
           />
-          <DropDown
-            title="graphic design"
-            src="./images/navbar/graphic-design.svg"
-          />
-          <DropDown title="web design" src="./images/navbar/web-design.svg" />
-          <DropDown
-            title="print design"
-            src="./images/navbar/print-design.png"
-          />
-          <DropDown
-            title="video editing"
-            src="./images/navbar/video-editing.png"
-          />
-          <DropDown title="branding" src="./images/navbar/branding.png" />
-          <DropDown
-            title="presentation"
-            src="./images/navbar/presentation.png"
-          />
-          <DropDown title="ad design" src="./images/navbar/ad-design.png" />
-          <DropDown
-            title="illustrations"
-            src="./images/navbar/illustrations.png"
-          />
-          <DropDown
-            title="motion graphic"
-            src="./images/navbar/motion-graphic.png"
-          />
-          <Link
-            to="/#"
-            className="transition-all px-3 py-3 mt-4 bg-blue-100/50 border-1/80 text-blue-500 font-bold rounded-md text-sm hover:border-1 hover:bg-white"
-          >
-            ENTIRE SCOPE OF SERVICE
-          </Link>
+          <DropDown title="graphic design" className={'w-full'} />
         </div>
       </div>
 
@@ -510,7 +471,7 @@ const Navbar = () => {
         onClick={() => setIsResourceHovered((prev) => !prev)}
       >
         <div
-          className="hidden fixed rounded-xl bg-white top-[48px] right-[30%] m-auto flex-col justify-center items-center flex-wrap shadow-xl w-[18rem] lg:flex"
+          className="hidden fixed rounded-xl bg-white top-[98px] right-[40%] m-auto flex-col justify-center items-center flex-wrap shadow-xl w-[18rem] lg:flex"
           style={{ zIndex: 1122 }}
         >
           <DropDown
