@@ -294,7 +294,7 @@ const Navbar = () => {
       >
         <nav
           id="nav"
-          className="relative flex justify-center items-center px-6 py-4 max-w-7xl border-b-1 border-gray-200 bg-black/60 p-4 w-full h-20 rounded-full m-auto overflow-hidden lg:py-0.5"
+          className="relative flex justify-center items-center px-2 py-4 max-w-7xl border-b-1 border-gray-200 bg-black/60 p-4 w-full h-20 rounded-full m-auto overflow-hidden lg:py-0.5"
         >
           <div className={''} style={cssStyle.blur}></div>{' '}
           <div className="flex justify-between items-center w-full gap-10 md:mx-10">
