@@ -1,15 +1,21 @@
 import { Link } from 'react-router-dom';
 
-const Examples = () => {
+const Examples = ({ title = 'Examples', children }) => {
   return (
     <section className="mx-auto w-11/12 max-w-7xl my-12 md:my-20">
       <div className="grid place-items-center gap-10">
-        <h1 className="text-2xl font-bold text-center">Examples</h1>
+        <h1 className="text-2xl font-bold text-center">{title}</h1>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-          <ExamplesCard />
-          <ExamplesCard descripion="Companies in the US pharmaceutical industry that are developing GLP-1 drugs. Also apply the following filter: market cap greater than $10b with EBITDA margin 15% and higher." />
-          <ExamplesCard />
-          <ExamplesCard />
+          {children ? (
+            children
+          ) : (
+            <>
+              <ExamplesCard />
+              <ExamplesCard descripion="Companies in the US pharmaceutical industry that are developing GLP-1 drugs. Also apply the following filter: market cap greater than $10b with EBITDA margin 15% and higher." />
+              <ExamplesCard descripion="Tell me about United Healthcare's (UNH) businesses and its strongest competition in each." />
+              <ExamplesCard descripion="Tell me about Tencent's (700) revenue streams. Which ones are the most profitable?" />
+            </>
+          )}
         </div>
       </div>
     </section>
