@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
+
+const StartPage = React.lazy(() => import('./pages/StartPage'));
 const ErrorPage = React.lazy(() => import('./pages/ErrorPage'));
 
 function App() {
@@ -19,6 +21,11 @@ function App() {
         {
           path: '/',
           element: <HomePage />,
+        },
+
+        {
+          path: '/app/start',
+          element: <StartPage />,
         },
       ],
     },
