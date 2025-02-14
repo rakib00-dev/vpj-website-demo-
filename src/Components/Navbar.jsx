@@ -273,12 +273,12 @@ const Navbar = () => {
       const scrollValue = window.scrollY;
       if (scrollValue >= 82) {
         if (navBarFix.current) {
-          navBarFix.current.style.top = '0';
+          navBarFix.current.style.top = '10px';
           navBarFix.current.style.position = 'sticky';
         }
       } else {
         if (navBarFix.current) {
-          navBarFix.current.style.top = '0';
+          navBarFix.current.style.top = '10px';
           navBarFix.current.style.position = null;
         }
       }
@@ -288,13 +288,13 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="mx-auto transition-all mt-4 mb-8 md:my-8 bg-black/80 w-11/12 md:w-4/5 max-w-7xl h-20 relative top-0 border-b-1  border-gray-200 z-20  rounded-full"
+        className="mx-auto transition-all mt-4 mb-8 md:my-8 bg-black/80 w-11/12 md:w-4/5 max-w-7xl h-15 md:h-20 relative top-0 border-b-1  border-gray-200 z-20  rounded-full"
         id="navBarFix"
         ref={navBarFix}
       >
         <nav
           id="nav"
-          className="relative flex justify-center items-center px-4 py-4 max-w-7xl border-b-1 border-gray-200 bg-black/60 w-full h-20 rounded-full m-auto overflow-hidden"
+          className="relative flex justify-center items-center px-4 py-4 max-w-7xl border-b-1 border-gray-200 bg-black/60 w-full h-15 md:h-20 rounded-full m-auto overflow-hidden"
         >
           <div className={''} style={cssStyle.blur}></div>{' '}
           <div className="flex justify-between items-center w-full gap-10 md:mx-10">

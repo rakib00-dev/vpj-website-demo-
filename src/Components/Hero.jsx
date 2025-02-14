@@ -30,39 +30,22 @@ const Hero = () => {
             </span>
           </h1>
           <ul className="flex mx-auto flex-wrap flex-col w-11/12 justify-center items-center md:flex-row gap-4">
-            <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit  bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
-              <img
-                src="./images/hero/circle-done.png"
-                loading="lazy"
-                className="w-6 "
-              />{' '}
-              The latest AI contextual analysis
-            </li>
-            <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
-              <img
-                src="./images/hero/circle-done.png"
-                loading="lazy"
-                className="w-6 "
-              />{' '}
-              Trusted market and financial data
-            </li>
-            <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
-              <img
-                src="./images/hero/circle-done.png"
-                loading="lazy"
-                className="w-6 "
-              />{' '}
-              Proprietary data pipeline
-            </li>
-            <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
-              <img
-                src="./images/hero/circle-done.png"
-                loading="lazy"
-                className="w-6 "
-              />{' '}
-              Institutional-quality portfolio backtesting and benchmarking{' '}
-            </li>
+            <HeroList />
           </ul>
+          <div className="flex mx-auto flex-wrap flex-col w-11/12 justify-center items-center md:flex-row gap-4">
+            <img
+              src="./images/hero/arrow-down.svg"
+              alt=""
+              loading="lazy"
+              className="w-14"
+            />
+            <div
+              style={{
+                background:
+                  'radial-gradient(53.2% 53.2% at 50% 50%, rgba(173, 193, 255, 0.498) 0%, rgba(251, 251, 254, 0) 100%)',
+              }}
+            ></div>
+          </div>
         </div>
       </header>
     </>
@@ -70,3 +53,42 @@ const Hero = () => {
 };
 
 export default Hero;
+
+const HeroList = () => {
+  return (
+    <>
+      <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit  bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
+        <img
+          src="./images/hero/circle-done.png"
+          loading="lazy"
+          className="w-6 "
+        />{' '}
+        The latest AI contextual analysis
+      </li>
+      <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
+        <img
+          src="./images/hero/circle-done.png"
+          loading="lazy"
+          className="w-6 "
+        />{' '}
+        Trusted market and financial data
+      </li>
+      <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
+        <img
+          src="./images/hero/circle-done.png"
+          loading="lazy"
+          className="w-6 "
+        />{' '}
+        Proprietary data pipeline
+      </li>
+      <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
+        <img
+          src="./images/hero/circle-done.png"
+          loading="lazy"
+          className="w-6 "
+        />{' '}
+        Institutional-quality portfolio backtesting and benchmarking{' '}
+      </li>
+    </>
+  );
+};
