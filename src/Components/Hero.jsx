@@ -29,42 +29,40 @@ const Hero = () => {
               using the latest AI capabilities.
             </span>
           </h1>
-          {/* <div className="">
-            <ul className="flex mx-auto flex-wrap flex-col w-11/12 justify-center items-center md:flex-row gap-4">
-              <li className="flex justify-center items-center gap-3 w-fit  bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
-                <img
-                  src="./images/hero/circle-done.png"
-                  loading="lazy"
-                  className="w-6 "
-                />{' '}
-                The latest AI contextual analysis
-              </li>
-              <li className="flex justify-center items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
-                <img
-                  src="./images/hero/circle-done.png"
-                  loading="lazy"
-                  className="w-6 "
-                />{' '}
-                Trusted market and financial data
-              </li>
-              <li className="flex justify-center items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
-                <img
-                  src="./images/hero/circle-done.png"
-                  loading="lazy"
-                  className="w-6 "
-                />{' '}
-                Proprietary data pipeline
-              </li>
-              <li className="flex justify-center items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
-                <img
-                  src="./images/hero/circle-done.png"
-                  loading="lazy"
-                  className="w-6 "
-                />{' '}
-                Institutional-quality portfolio backtesting and benchmarking{' '}
-              </li>
-            </ul>
-          </div> */}
+          <ul className="flex mx-auto flex-wrap flex-col w-11/12 justify-center items-center md:flex-row gap-4">
+            <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit  bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
+              <img
+                src="./images/hero/circle-done.png"
+                loading="lazy"
+                className="w-6 "
+              />{' '}
+              The latest AI contextual analysis
+            </li>
+            <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
+              <img
+                src="./images/hero/circle-done.png"
+                loading="lazy"
+                className="w-6 "
+              />{' '}
+              Trusted market and financial data
+            </li>
+            <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
+              <img
+                src="./images/hero/circle-done.png"
+                loading="lazy"
+                className="w-6 "
+              />{' '}
+              Proprietary data pipeline
+            </li>
+            <li className="flex justify-center text-sm md:text-md items-center gap-3 w-fit bg-gradient-to-t from-[#dddbff] via-[#ecebff] to-white py-2 px-4 border rounded-full border-gray-400 shadow">
+              <img
+                src="./images/hero/circle-done.png"
+                loading="lazy"
+                className="w-6 "
+              />{' '}
+              Institutional-quality portfolio backtesting and benchmarking{' '}
+            </li>
+          </ul>
         </div>
       </header>
     </>
