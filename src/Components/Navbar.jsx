@@ -23,7 +23,7 @@ const Navbar = () => {
           style={{ color: 'white' }}
         >
           <img
-            src="./images/navbar/book.svg"
+            src="../images/navbar/book.svg"
             alt=""
             loading="lazy"
             className="filter invert w-7"
@@ -46,7 +46,7 @@ const Navbar = () => {
           style={{ color: 'white' }}
         >
           <img
-            src="./images/navbar/square.svg"
+            src="../images/navbar/square.svg"
             alt=""
             loading="lazy"
             className="filter invert w-7 capitalize"
@@ -80,7 +80,7 @@ const Navbar = () => {
           onclick={() => setIsHovered((prev) => !prev)}
         >
           <img
-            src="./images/navbar/book.svg"
+            src="../images/navbar/book.svg"
             alt=""
             loading="lazy"
             className="filter invert w-7"
@@ -126,7 +126,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src="./images/navbar/square.svg"
+            src="../images/navbar/square.svg"
             alt=""
             loading="lazy"
             className="filter invert w-7"
