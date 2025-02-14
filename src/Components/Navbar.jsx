@@ -388,7 +388,7 @@ const Navbar = () => {
         onClick={() => setIsHovered((prev) => !prev)}
       >
         <div
-          className="hidden fixed rounded-xl bg-white top-[98px] p-5 m-auto justify-start flex-col items-start shadow-xl w-[20rem] right-1/2 lg:flex"
+          className="hidden fixed rounded-xl bg-white top-[82px] p-5 m-auto justify-start flex-col items-start shadow-xl w-[20rem] right-1/2 lg:flex"
           style={{ zIndex: 1122 }}
         >
           <DropDown
@@ -414,7 +414,7 @@ const Navbar = () => {
         onClick={() => setIsResourceHovered((prev) => !prev)}
       >
         <div
-          className="hidden fixed rounded-xl p-5 bg-white top-[98px] right-[40%] m-auto flex-col justify-center items-center flex-wrap shadow-xl w-[18rem] lg:flex"
+          className="hidden fixed rounded-xl p-5 bg-white top-[82px] right-[40%] m-auto flex-col justify-center items-center flex-wrap shadow-xl w-[18rem] lg:flex"
           style={{ zIndex: 1122 }}
         >
           <DropDown title="Search for securities" className={'w-full'} />
