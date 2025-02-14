@@ -100,7 +100,7 @@ const ResearchATopic = () => {
         ref={textarea}
         onChange={handleText}
       ></textarea>
-      <div className="flex justify-between mx-4 py-2 px-4 w-full gap-3 bg-white transition-all duration-75 ">
+      <div className="flex justify-between py-2 px-4 w-full gap-3 bg-white transition-all duration-75 ">
         <button
           className="text-white px-3 py-2 text-sm rounded-full"
           style={{ backgroundImage: 'linear-gradient(180deg,#3a31d8,#003fff)' }}
