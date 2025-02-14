@@ -22,9 +22,9 @@ const ExamplesCard = ({
   descripion = `Find small or mid-cap companies (market cap greater than $500m and less than $10b) that focus on AI and Machine Learning platforms.`,
 }) => {
   return (
-    <div className=" transition-all relative grid w-60 p-3 gap-3 h-48 rounded-2xl bg-gray-100 cursor-pointer hover:bg-purple-300 group">
+    <div className=" transition-all relative grid w-72 md:w-60 p-3 gap-3 h-48 rounded-2xl bg-gray-100 cursor-pointer hover:bg-purple-300 group">
       <p className="text-sm w-full text-[#734b8a]">{descripion}</p>
-      <div className="absolute bottom-3 right-3 justify-end items-center hidden group-hover:flex">
+      <div className="absolute bottom-3 right-3 justify-end items-center opacity-100 md:opacity-0 md:group-hover:opacity-100">
         <Link
           to=""
           className="py-2 px-4 text-sm text-white bg-blue-500 rounded-full"
