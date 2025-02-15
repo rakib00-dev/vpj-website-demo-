@@ -33,7 +33,7 @@ const Select = () => {
           />
           <MdOutlineCancel className="text-blue-600 font-extrabold text-2xl" />
         </div>
-        <div className="flex justify-center items-center py-3 px-6 bg-gray-100 text-blue-600">
+        <div className="flex justify-center items-center py-3 px-6 bg-gray-100 text-blue-600 w-80">
           <IoMdCheckboxOutline /> 0 Selected securities
         </div>
       </div>
