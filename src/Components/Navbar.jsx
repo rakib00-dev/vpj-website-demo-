@@ -304,7 +304,7 @@ const Navbar = () => {
             >
               <Link to="/" className="flex items-center">
                 <img
-                  src="../images/navbar/logo.svg"
+                  src="/images/navbar/logo.svg"
                   alt="logo"
                   className="w-60 filter invert"
                   loading="lazy"
