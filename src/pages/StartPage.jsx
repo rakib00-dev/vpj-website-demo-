@@ -14,7 +14,6 @@ const StartPage = () => {
         <Link
           to={'/index-builder/create/search'}
           className=" py-2 px-4 bg-blue-800 text-2xl text-white w-fit mx-auto rounded-xl cursor-pointer hover:bg-blue-500"
-          style={{ zIndex: 233 }}
         >
           Go To Create Page
         </Link>
